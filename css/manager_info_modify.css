@@ -1,0 +1,169 @@
+/* 全局样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 顶部栏样式 */
+.header {
+    width: 100%;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px; /* 调整间距 */
+}
+
+.image {
+    width: 30px;
+    margin-right: 3px;
+    margin-left: 10px;
+}
+/* 主容器 */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 左侧导航栏样式 */
+.sidebar {
+    width: 150px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+.sidebar .dropdown {
+    position: relative; /* 相对于自身定位 */
+}
+
+.sidebar .dropdown-content {
+    display: none; /* 默认隐藏 */
+    position: absolute; /* 绝对定位 */
+    left: 100%; /* 在父元素（.dropdown）的右侧显示 */
+    top: 0; /* 与父元素顶部对齐 */
+    background-color: #333; /* 与侧边栏背景色一致 */
+    color: white;
+    min-width: 160px; /* 下拉菜单的最小宽度 */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    z-index: 1; /* 确保下拉菜单显示在其他内容之上 */
+    list-style-type: none; /* 去除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .dropdown-content li {
+    margin: 0;
+}
+
+.sidebar .dropdown-content li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    white-space: nowrap; /* 防止文本换行 */
+}
+
+.sidebar .dropdown-content li a:hover {
+    background-color: #575757; /* 鼠标悬停时改变背景色 */
+}
+
+/* 显示下拉菜单 */
+.sidebar .dropdown:hover .dropdown-content {
+    display: block; /* 鼠标悬停时显示下拉菜单 */
+}
+
+/* 调整触发下拉显示的按钮样式（可选） */
+.sidebar .dropbtn {
+    padding: 10px;
+    display: block;
+    width: 100%; /* 使按钮宽度与侧边栏一致 */
+    text-align: left; /* 文本左对齐 */
+}
+
+/* 右侧内容区域样式 */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-image: url("../pic/background.png");
+    background-size: cover;
+    background-position: center;
+}
+/* 表单样式 */
+.content form table {
+    width: 80%; /* 使表格宽度与内容区域一致 */
+    border-collapse: collapse; /* 合并表格边框 */
+    margin-bottom: 20px; /* 表格底部添加间距 */
+    text-align: center;
+}
+
+.content form table tr {
+    border-bottom: 1px solid #ddd; /* 表格行底部添加边框 */
+}
+
+.content form table tr:last-child {
+    border-bottom: none; /* 最后一行不需要边框 */
+}
+
+.content form table td {
+    padding: 10px; /* 单元格内边距 */
+    vertical-align: top; /* 单元格内容顶部对齐 */
+}
+
+.content form table td label {
+    font-weight: bold; /* 标签字体加粗 */
+    display: block; /* 标签独占一行 */
+    margin-bottom: 5px; /* 标签与输入框之间添加间距 */
+}
+
+.content input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*.content input{*/
+/*    width: 80%;*/
+/*    padding: 10px;*/
+/*    margin-top: 5px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*}*/
+
+.content form table td button {
+    padding: 10px 20px; /* 按钮内边距 */
+    border: none; /* 去除按钮边框 */
+    background-color: #0056b3; /* 按钮背景色 */
+    color: white; /* 按钮文字颜色 */
+    border-radius: 5px; /* 按钮圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    margin-right: 10px; /* 右侧按钮之间添加间距 */
+}
+
+.content form table td button:hover {
+    background-color: #004080; /* 鼠标悬停时改变按钮背景色 */
+}

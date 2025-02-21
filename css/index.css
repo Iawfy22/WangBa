@@ -1,0 +1,167 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/*html{*/
+/*    overflow: hidden;*/
+/*}*/
+.header {
+    padding: 3px 0;
+    margin-bottom: 0px;
+    text-align: center;
+    background: darkblue;
+    color: white;
+    font-size: 25px;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../pic/background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to right, #9cc4ea, #4dafed);;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+    /*background: #007BFF;*/
+}
+.nav>ul {
+    margin-right: auto;
+    margin-left: auto;
+}
+.nav>ul>li {
+    float: left;
+    width: 20%;
+    font-weight: bold;
+    height: 72px;
+    text-align: center;
+    list-style: none;
+}
+
+.nav>ul>li>a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 72px;
+    font-size: 20px;
+    color: black;
+}
+
+.nav>ul>li>a:hover {
+    color: orange;
+}
+.pic_index{
+    height: 460px;
+    width: 100%;
+}
+.m1{
+    height: 400px;
+    width: 30%;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+}
+.m2 {
+    height: 400px;
+    width: 40%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.m3 {
+    height: 400px;
+    width: 40%;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+}
+hr{
+    background-color: #0056b3; /* 设置背景颜色为水平线颜色 */
+    height: 5px; /* 设置水平线的高度 */
+    width: 70%; /* 设置水平线的宽度 */
+    margin: 0 auto; /* 水平居中 */
+    border: none; /* 可选，移除默认的边框样式 */
+}
+/*ul>span {*/
+/*    float: left;*/
+/*    line-height: 72px;*/
+/*    color: rgb(225, 224, 224);*/
+/*    font-weight: 800;*/
+/*    font-size: 24px;*/
+/*}*/
+
+
+/* 导航栏的列表项 */
+.nav > ul > li {
+    float: left;
+    width: 20%;
+    font-weight: bold;
+    height: 72px;
+    text-align: center;
+    list-style: none;
+    position: relative; /* 确保下拉菜单相对于此定位 */
+}
+
+/* 导航栏链接 */
+.nav > ul > li > a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 72px;
+    font-size: 20px;
+    color: black;
+}
+
+/* 鼠标悬停时改变文字颜色 */
+.nav > ul > li > a:hover {
+    color: orange;
+}
+
+/* 隐藏下拉菜单 */
+.nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* 紧贴“登录/注册”按钮下方 */
+    left: 0;
+    width: 100%;
+    background-color: #799ddb;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1;
+}
+
+/* 当鼠标悬停在 “登录/注册” 时显示下拉菜单 */
+.nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    border-radius: 40px;
+}
+/* 下拉菜单项样式 */
+.dropdown li {
+    width: 100%;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    color: orange;
+}
